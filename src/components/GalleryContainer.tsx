@@ -8,7 +8,7 @@ type Props = {
 
 export default function GalleryContainer({ photos }: Props) {
   return (
-    <div className="gallery columns-2 md:columns-3 lg:columns-4 gap-3">
+    <div className="gallery columns-2 md:columns-3 lg:columns-4 gap-3 p-3">
       {photos.map((photo) => (
         <div
           key={photo.id}

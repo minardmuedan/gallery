@@ -22,7 +22,7 @@ export default function SinglePhoto({ photo }: { photo: Photo }) {
         <Button>Download</Button>
       </div>
 
-      <div className="w-fit mx-auto">
+      <div className="">
         <Image
           src={photo.urls.regular}
           alt={photo.alt_description}
@@ -30,7 +30,7 @@ export default function SinglePhoto({ photo }: { photo: Photo }) {
           height={photo.height}
           quality={100}
           style={{ background: photo.color }}
-          className="max-h-screen w-fit rounded-md"
+          className="object-contain max-h-screen rounded-md"
         />
       </div>
 
